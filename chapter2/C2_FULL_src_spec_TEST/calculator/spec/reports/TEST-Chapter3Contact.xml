@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Chapter3  Contact" errors="0" tests="3" failures="0" time="0.029" timestamp="2016-05-21T00:35:53">
+  <testcase classname="Chapter3  Contact" name="Should be create a function that defines an object called Contact" time="0.009"></testcase>
+  <testcase classname="Chapter3  Contact" name="Should contain properties name, profession, and number" time="0.003"></testcase>
+  <testcase classname="Chapter3  Contact" name="Should contain a function &amp;apos;changeNumber&amp;apos; that changes the number to the given number" time="0.001"></testcase>
+</testsuite>
+</testsuites>
