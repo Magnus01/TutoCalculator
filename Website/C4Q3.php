@@ -62,39 +62,17 @@
 							<!-- Table -->
 						<section>
 						<h2>Fourth Chapter</h2><h3 id="test4"></h3><div id="test"></div>
-                        <h3>How do we prepare the logic for actual calculation?</h3>
+                        <h3><strong>Parsing:</strong> Dividing the stack in two</h3>
                             
- <p id="pp">We now have the OperatorToken class that can be used to store inforation about the operator we are going to use in our calculation. But how can we tie all of this together so that we can make an actual calculation of our postfix experssion? How can we evaluate our OperatorToken with two string properties in order to produce an actual calculation? We can evaluate our token by the use of a switch statement, which is a part of the standard JavaScript library. What is a switch statement? It does different actions based on different conditions, best described by the following example:
+<p id="pp">
+As we have learned earlier, a stack in JavaScript is simply an array. We can access the different values of an array in different ways. 
 </p>
                             
-<br><pre><code class="prettyprint">example_variable = 'x';
- 
-switch(example_variable) {
-    case 'x':
-        console.log("this is the case x");
-        break;
-    case 'y':
-        console.log("and... this is the case y");
-        break;
-    default:
-        console.log("If none of the cases match the variable, this will run.");
- }
-</code></pre><br>
-                            
- <p id="pp">A quick comparison is shown above. Here one can see that in the case ‘x’ one performs the operation console.log("this is the case x"). Also notice the need for an ending statement called “break;”. When the JavaScript interpreter sees this, it breaks out of the switch code. If not, it keeps checking your condition against the other cases. When it has found the operator it is looking for, there is no need to continue to find the cases for *, -, etc. This is done for each individual operator. The default is added as a safeguard at the end. If none of the cases match the evaluated variable, then the default will run. This makes debugging your code easier.
- </p>
-                         
-<br><pre><code class="prettyprint">var example_function = function(x){
-    console.log(x.name);
-    console.log(x.age);
-};
+<br><pre><code class="prettyprint">
 
-// the variable "example" holds a class instance as it's value, with the properties "name" and "age".
-example_function(example);
 </code></pre><br>
                             
-<p id="pp">Remember how we could access the property of a class instance? It turns out that you can actually give a class instance as a parameter to a function. You can then, from inside that function access it's properties by using the same notation that you learned about in the last chapter. This will prove itself very useful in the following task.
-</p>
+
                             
 						<div id="test"></div>
 						
@@ -129,7 +107,7 @@ example_function(example);
 					
 					<!--Put the question here!!-->
 					
-			<p><h3><strong>Question 2:</strong> the equate function</h3>
+			<p><h3><strong>Question 3:</strong> parsing and dividing the stack</h3>
 Create a function "equate" that takes 3 parameters in the following order:<br>
 a) token<br>
 b) num1<br>
@@ -171,7 +149,7 @@ and the subtraction operator (-), and add more as you get these working.</p>
 								<br/><br/><br/>
 									<ul class="actions fit">
 										<li><a href="calculator.html" class="button alt fit">Back</a></li>
-										<li><a href="C4Q3.php" class="button  alt fit">Next chapter</a></li>
+										<li><a href="C4Q4.php" class="button  alt fit">Next chapter</a></li>
 										
 									</ul>
 								</div>

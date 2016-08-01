@@ -6,4 +6,16 @@
         it more readable, more structured, and decreases loading times. All in all, it's better than using photos... and not to mention the
         extreme hasstle if the content of a picture needs to be changed. All static picutres of code should be replaced by dynamic <code> tags.
 
-(2) 
+
+
+(2) Using Jasmine as a library in a jQuery file that connects the specs to hints that will be displayed on the website as popups once the user inputs their answer! (INCREDIBLY COOL; AND DEFINATELY DOABLE)
+    
+        It turns out that you can have jasmine be imported into your project as a library. This means that we can run the specs like we would
+        run any other function on events like a button click (submit button) even somehow dynamically...(!!!) We can even have an audio file
+        play a recording of the hint for imporved usability and entertainment.
+        http://jasmine.github.io/2.4/node.html#section-Using_the_library
+
+        There are 3 components to this implementation.
+        1) the css and html for displaying the hint and playin the correct audio
+        2) the jasmine determining where the tests failed
+        3) the jquery for choosing the right hint, triggering the showing the hint
