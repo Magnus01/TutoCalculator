@@ -37,6 +37,7 @@ what follows is an example of how it will look.
 
   <!-- Include jQuery Popup Overlay -->
   <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+  <!-- Include the jQuery_hint_showcase script -->
 
   <script>
     $(document).ready(function() {
@@ -50,6 +51,8 @@ what follows is an example of how it will look.
         
         //events
         onopen: function() {
+            // Run the jQuery_hint_showcase script function:
+            //jQuery_hint_showcase();
             console.log('Popup just opened!');
         },
         onopen: function() {
