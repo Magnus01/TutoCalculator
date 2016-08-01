@@ -107,14 +107,14 @@
 					
 					<!--Put the question here!!-->
 					
-			<p><h3><strong>Question 2:</strong> the equate function</h3>
-Create a function "equate" that takes 3 parameters in the following order:<br>
-a) token<br>
-b) num1<br>
-c) num2<br><br>
-The function should equate the result depending on the operation token.
-Your should begin with simple operators such as the addition operator (+)
-and the subtraction operator (-), and add more as you get these working.</p>
+			<p><h3><strong>Question 4:</strong> the grand finale</h3>
+Create a function main that takes an array of OperatorTokens and numbers
+in postfix notation.
+F.eks: [2, 4, new OperatorToken("+", "binary")]
+The function should calculate the result of the given expression and return the correct answer
+
+Due to the complexity of this assignment, little care is given to how you've implemented it.
+As long as your function is able to correctly compute the expressions we hand it, it will pass.</p>
 
 
 

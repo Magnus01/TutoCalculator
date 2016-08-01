@@ -62,15 +62,15 @@
 							<!-- Table -->
 						<section>
 						<h2>Fourth Chapter</h2><h3 id="test4"></h3><div id="test"></div>
-                        <h3><strong>Parsing:</strong> Dividing the stack in two</h3>
+                        <h3>?<!--<strong>Parsing:</strong> Dividing the stack in two--></h3>
                             
-<p id="pp">
+<!--<p id="pp">
 As we have learned earlier, a stack in JavaScript is simply an array. We can access the different values of an array in different ways. 
 </p>
                             
 <br><pre><code class="prettyprint">
 
-</code></pre><br>
+</code></pre><br>-->
                             
 
                             
@@ -107,14 +107,13 @@ As we have learned earlier, a stack in JavaScript is simply an array. We can acc
 					
 					<!--Put the question here!!-->
 					
-			<p><h3><strong>Question 3:</strong> parsing and dividing the stack</h3>
-Create a function "equate" that takes 3 parameters in the following order:<br>
-a) token<br>
-b) num1<br>
-c) num2<br><br>
-The function should equate the result depending on the operation token.
-Your should begin with simple operators such as the addition operator (+)
-and the subtraction operator (-), and add more as you get these working.</p>
+			<p><h3><strong>Question 3:</strong> <!--parsing and dividing the stack--></h3>
+Create a function called 'countOperators' that counts and returns the number of OperatorTokens in the list.
+The list given can include both numbers and OperatorTokens.
+ex. [1, 2, new OperatorToken("+", "binary")] - function should output 1.
+ex. [5, 2, 4, new OperatorToken("*", "binary"), new OperatorToken("+", "binary")] - function should output 2.
+
+Hint: function isNaN - look it up.</p>
 
 
 

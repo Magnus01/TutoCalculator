@@ -1,0 +1,9 @@
+C4Q1_spec.js - OK (..... - 5 tests)
+C4Q2_spec.js - OK (.... - 4 tests)
+C4Q3_spec.js - OK (. - only one test; a little bit too few?)
+C4Q4_spec.js - OK (.. - only two test; a little bit too few?)
+
+calculator-spec.js - OK (... - 3 tests)
+questions_spec.js - OK (.FFFFFF. - Several errors)
+
+test_spec.js (. - one spec... probably since it's called test_spec.js)
