@@ -62,7 +62,7 @@
 							<!-- Table -->
 						<section>
 						<h2>Fourth Chapter</h2><h3 id="test4"></h3><div id="test"></div>
-                        <h3> Now how do we prepare the logic for actual calculation of the postfix expression?</h3>
+                        <h3>How do we create a Token class in JavaScript? </h3>
 						
                             
  <p id="pp">One of the first things we need to have in place is the token objects we are going to store in our token stack. When we need to store several values in the same variable, we have a couple of options. The best option for us right now is to create a class. But how do we go about creating a class in the JavaScript language?
@@ -73,7 +73,7 @@
 };
 </code></pre><br>
                             
-<p id="pp">In JavaScript, you can create a class simply by creating a function, with only a few differences. You name the function like you would name any other function. You add some arguments. The difference reveals itself once you start adding the values to the function. You do this by adding "this.", then the property name of your choice (usually the same as the arguments), and then you set this equal to the argument you passed into the function. This sets the parameters of your class.
+<p id="pp">In JavaScript, you can create a class simply by creating a function, with only a few differences. You name the function like you would name any other function. You add some arguments. The difference reveals itself once you start adding the values to the function. You do this by adding "this.", then the property name of your choice (usually the same as the arguments), and then you set this equal to the argument you passed into the function. This sets the properties of your class.
 </p>
                             
 <br><pre><code>var example = function(x, y) {
