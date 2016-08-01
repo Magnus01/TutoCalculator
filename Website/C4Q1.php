@@ -62,54 +62,40 @@
 							<!-- Table -->
 						<section>
 						<h2>Fourth Chapter</h2><h3 id="test4"></h3><div id="test"></div>
-                        <h3> Now how do we prepare the logic for actual calculation?</h3>
+                        <h3> Now how do we prepare the logic for actual calculation of the postfix expression?</h3>
 						
                             
-                           <img src="images/functionequate.png" id="example"/><br/><br/>
-                            
- <p id="pp">So name the function equate with the following parameters: token, num1, and num2. Start by executing the function with the initial condition of the sum=0. Define token to be an abbreviation “tk”.
-Execute the prebuilt function switch. What is switch? It does different actions based on different conditions, best described by the following example:
+ <p id="pp">One of the first things we need to have in place is the token objects we are going to store in our token stack. When we need to store several values in the same variable, we have a couple of options. The best option for us right now is to create a class. But how do we go about creating a class in the JavaScript language?
 </p>
                             
-                            <img src="images/comparisonswitch.png" id="example"/><br/><br/>
+<br><pre><code>var example = function(x, y) {
+
+};
+</code></pre><br>
                             
- <p id="pp">A quick comparison is shown above. Here one can see that in the case ‘+’ one performs the operation “sum += num1 + num2”
-Also notice the need for “break;”, when JavaScript interpreter sees this, it breaks out of the switch code. It has found which operator it is looking for and does not need to continue to find the cases for *, -, etc. This is done for each individual operator.
+<p id="pp">In JavaScript, you can create a class simply by creating a function, with only a few differences. You name the function like you would name any other function. You add some arguments. The difference reveals itself once you start adding the values to the function. You do this by adding "this.", then the property name of your choice (usually the same as the arguments), and then you set this equal to the argument you passed into the function. This sets the parameters of your class.
+</p>
+                            
+<br><pre><code>var example = function(x, y) {
+    this.x = x;
+    this.y = y;
+};
+</code></pre><br>
+                            
+ <p id="pp">Once you have created the class and added your properties, you can access the parameters of the function by first creating a new instance of the class, and storing this instance in a variable.
  </p>
                          
-                            <img src="images/comparisonswitch2.png" id="example"/><br/><br/>
+<br><pre><code>var example_instance = example("first parameter", "second parameter");
+</code></pre><br>
                             
- <p id="pp"> A quick comparison is shown above. Here one can see that in the case ‘+’ one performs the operation “sum += num1 + num2”
-Also notice the need for “break;”, when JavaScript interpreter sees this, it breaks out of the switch code. It has found which operator it is looking for and does not need to continue to find the cases for *, -, etc. This is done for each individual operator.
- 
+ <p id="pp"> After you have created the instance of the class you just created, you can access it's parameters by typing the variable name, then a dot, and then the property you want to access. Printing this to with the console.log function will show us how this works.
 </p>
-				
-                          
                             
-<p id="pp">Function name: Main
-The following is the logic for this section. Takes the input token from the appstack (one at a time by using the index i)
-The preliminary types defined are binary and unary. Binary is an operator that takes two operands (e.g. +,-,*,/) Therefore, one must pop it twice and push the resultant number. For example, (2*2+54) would be (22*54+) which would become (4 54+) which would become 58. Note that from the first operation to the second, the two 2’s were popped and the resultant 4 was pushed.
-Unary is an operator that only takes one operand (e.g. sin(operand), log(operand), etc.). Therefore, only pop one and pushes the resultant value.
-So the following is how the for loop begins:
-</p>
-                          <img src="images/tokenstack.png" id="example"/><br/><br/>    
-<p id="pp">The initial conditions are defined, numStack array variable is defined using the “new” constructor that initiates a new kind of array not to be confused with any other array.
+<br><pre><code>console.log(example_instance.y);
+</code></pre><br>		
+                                                 
+<p id="pp">"example_instance.y" will return the parameter you passed to the y property; which in this case is the string "second parameter".</p>
 
-</p>
-                            
- <p id="pp">Start the loop with the similar conditions as before. Start at index 0, if the index is less than the postfix stack labelled “tokenStack” then keep going, keep iterating (i++).</p>
-                            
- <p id="pp"> Now start with inputToken=tokenStack[i] which means the inputToken will be different for every iteration as tokenStack[i] is used.
-Inside the for loop, the next statement is an if statement.</p>
-                            
- <p id="pp">The next step is to define var outputPop. This takes the variable o2 from the stack or array by using the pop function “operatorStack.pop()”. Note how this is then pushed on to the postfixStack.  stack?</p>
-                            
- <img src="images/arguments.png" id="example"/><br/><br/>
-
-<p id="pp">So if it is not a number (isNaN), inputToken in question must be an operator.
-Now what kind of operator is it? We know if the operator is binary. So access the property arguments and see if the value is “binary” with the code:
-</p>
-                             <img src="images/binary.png" id="example"/><br/><br/>
                             
 						<div id="test"></div>
 						
@@ -144,10 +130,9 @@ Now what kind of operator is it? We know if the operator is binary. So access th
 					
 					<!--Put the question here!!-->
 					
-			<p><h3><strong>Question 1:</strong> Operators and its property values </h3> Create a function called OperatorToken This function should contain
-the necessary property values including 1) what kind of operator the
-token is, and 2) the arity of the token (whether that operator token
-is unary or binary... or even trinary)</p>
+			<p><h3><strong>Question 1:</strong> Operators and their property values </h3> Create a class called OperatorToken. This function should contain the necessary property values including <br>
+                        1) what kind of operator the token is <br>
+                        2) the arity of the token (whether that operator token is unary, binary, or even trinary)</p>
 
 
 
