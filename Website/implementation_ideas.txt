@@ -1,4 +1,4 @@
-(1) Replace code images with html <code> tags with syntax highlighting.
+*ADDED*(1) Replace code images with html <code> tags with syntax highlighting.
 
         For the code blocks, there are syntax highlighting libraries that can add color to <code> html tags automatically, and site-wide.
         http://stackoverflow.com/questions/1647724/color-syntax-highlighting-within-an-html-code-tag

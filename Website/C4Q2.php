@@ -76,10 +76,12 @@ switch(example_variable) {
     case 'y':
         console.log("and... this is the case y");
         break;
+    default:
+        console.log("If none of the cases match the variable, this will run.");
  }
 </code></pre><br>
                             
- <p id="pp">A quick comparison is shown above. Here one can see that in the case ‘x’ one performs the operation console.log("this is the case x"). Also notice the need for an ending statement called “break;”. When the JavaScript interpreter sees this, it breaks out of the switch code. If not, it keeps checking your condition against the other cases. When it has found the operator it is looking for, there is no need to continue to find the cases for *, -, etc. This is done for each individual operator.
+ <p id="pp">A quick comparison is shown above. Here one can see that in the case ‘x’ one performs the operation console.log("this is the case x"). Also notice the need for an ending statement called “break;”. When the JavaScript interpreter sees this, it breaks out of the switch code. If not, it keeps checking your condition against the other cases. When it has found the operator it is looking for, there is no need to continue to find the cases for *, -, etc. This is done for each individual operator. The default is added as a safeguard at the end. If none of the cases match the evaluated variable, then the default will run. This makes debugging your code easier.
  </p>
                          
 <br><pre><code class="prettyprint">var example_function = function(x){
