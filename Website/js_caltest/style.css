@@ -1,0 +1,65 @@
+/*------------------------------
+The Main Buttons (4 operators)
+----------------------------- */
+.fourMusk3teers button {
+    font-size: 36px;
+    width: 90px;
+    height: 90px;
+}
+
+div.thePlus {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+div.theMinus {
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+div.theMultiplyer {
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.theDivider {
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+/*------------------------------
+Buttons and GUI elements
+----------------------------- */
+
+.focusInTheMiddle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    letter-spacing: 2.5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#input_expression {
+    width: 450px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    text-align: left;
+    background-color:rgba(0, 0, 0, 0);
+    color:black;
+    border: none;
+    outline:none;
+    transition:height 1s;
+    -webkit-transition:height 1s;
+    letter-spacing: 2.5px;
+    text-underline-position: below;
+}
+
+#rpn_result {
+    font-size: 50%;
+}
