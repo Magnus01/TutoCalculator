@@ -67,7 +67,7 @@
  <p id="pp">We now have the OperatorToken class that can be used to store inforation about the operator we are going to use in our calculation. But how can we tie all of this together so that we can make an actual calculation of our postfix experssion? How can we evaluate our OperatorToken with two string properties in order to produce an actual calculation? We can evaluate our token by the use of a switch statement, which is a part of the standard JavaScript library. What is a switch statement? It does different actions based on different conditions, best described by the following example:
 </p>
                             
-<br><pre><code>example_variable = 'x';
+<br><pre><code class="prettyprint">example_variable = 'x';
  
 switch(example_variable) {
     case 'x':
@@ -82,7 +82,7 @@ switch(example_variable) {
  <p id="pp">A quick comparison is shown above. Here one can see that in the case ‘x’ one performs the operation console.log("this is the case x"). Also notice the need for an ending statement called “break;”. When the JavaScript interpreter sees this, it breaks out of the switch code. If not, it keeps checking your condition against the other cases. When it has found the operator it is looking for, there is no need to continue to find the cases for *, -, etc. This is done for each individual operator.
  </p>
                          
-<br><pre><code>var example_function = function(x){
+<br><pre><code class="prettyprint">var example_function = function(x){
     console.log(x.name);
     console.log(x.age);
 };
@@ -444,7 +444,7 @@ and the subtraction operator (-), and add more as you get these working.</p>
 
 
 
-
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </body>
 
 </html>

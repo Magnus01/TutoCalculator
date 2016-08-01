@@ -68,7 +68,7 @@
  <p id="pp">One of the first things we need to have in place is the token objects we are going to store in our token stack. When we need to store several values in the same variable, we have a couple of options. The best option for us right now is to create a class. But how do we go about creating a class in the JavaScript language?
 </p>
                             
-<br><pre><code>var example = function(x, y) {
+<br><pre><code class="prettyprint">var example = function(x, y) {
 
 };
 </code></pre><br>
@@ -76,7 +76,7 @@
 <p id="pp">In JavaScript, you can create a class simply by creating a function, with only a few differences. You name the function like you would name any other function. You add some arguments. The difference reveals itself once you start adding the values to the function. You do this by adding "this.", then the property name of your choice (usually the same as the arguments), and then you set this equal to the argument you passed into the function. This sets the properties of your class.
 </p>
                             
-<br><pre><code>var example = function(x, y) {
+<br><pre><code class="prettyprint">var example = function(x, y) {
     this.x = x;
     this.y = y;
 };
@@ -85,13 +85,13 @@
  <p id="pp">Once you have created the class and added your properties, you can access the parameters of the function by first creating a new instance of the class, and storing this instance in a variable.
  </p>
                          
-<br><pre><code>var example_instance = example("first parameter", "second parameter");
+<br><pre><code class="prettyprint">var example_instance = example("first parameter", "second parameter");
 </code></pre><br>
                             
  <p id="pp"> After you have created the instance of the class you just created, you can access it's parameters by typing the variable name, then a dot, and then the property you want to access. Printing this to with the console.log function will show us how this works.
 </p>
                             
-<br><pre><code>console.log(example_instance.y);
+<br><pre><code class="prettyprint">console.log(example_instance.y);
 </code></pre><br>		
                                                  
 <p id="pp">"example_instance.y" will return the parameter you passed to the y property; which in this case is the string "second parameter".</p>
@@ -442,7 +442,7 @@
 
 
 
-
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </body>
 
 </html>
