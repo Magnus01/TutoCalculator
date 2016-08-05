@@ -62,15 +62,28 @@
 							<!-- Table -->
 						<section>
 						<h2>Fourth Chapter</h2><h3 id="test4"></h3><div id="test"></div>
-                        <h3>?<!--<strong>Parsing:</strong> Dividing the stack in two--></h3>
+                        <h3>How do we evaluate our <strong>stack</strong>?</h3>
                             
 <p id="pp">
-As we have learned earlier, a stack in JavaScript is simply an array. We can access the different values of an array in different ways. 
+As we have learned earlier, a "stack" in JavaScript is simply a list of vales (also called an array). You can access the values of your list by specifying the name of the array, and then putting square brackets [] with a number in between. The number will refer to the "index" (the position) of the value you are trying to access. In computer science, we start counting from 0. So if you want to access the first value in your array, you put a zero in between the square brackets.
 </p>
                             
 <br><pre><code class="prettyprint">
+var myArray = [1, 2, "three"];
 
+// accessing the first value (1)
+myArray[0];
+
+// accessing the first value (2)
+myArray[1];
+
+// accessing the first value ("three")
+myArray[2];
 </code></pre><br>
+                            
+<p id="pp">
+But what happens if we have a very long list, and we want to access all of the vales after each other? In order to access each one of these values, one after the other, it would be smart to use a for loop. Since we want to access every single value in our list, we have to know how long our list is. You can check the length of a list by using the len() function that's built in to JavaScript.
+</p>
                             
 
                             
@@ -109,8 +122,8 @@ As we have learned earlier, a stack in JavaScript is simply an array. We can acc
 					
 			<p><h3><strong>Question 3:</strong> <!--parsing and dividing the stack--></h3>
 Create a function called 'countOperators'.
-This function should take one parameter; a list, including both numbers and OperatorTokens.
-The funcion should count and return the amount of OperatorTokens in the list.
+This function should take one parameter; a stack, including both numbers and OperatorTokens.
+The funcion should count and return the amount of OperatorTokens in the stack.
 </p>
 
 
