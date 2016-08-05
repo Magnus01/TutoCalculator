@@ -108,8 +108,9 @@ As we have learned earlier, a stack in JavaScript is simply an array. We can acc
 					<!--Put the question here!!-->
 					
 			<p><h3><strong>Question 3:</strong> <!--parsing and dividing the stack--></h3>
-Create a function called 'countOperators'. The funcion should count and returns the amount of OperatorTokens in the list.
-The list given will include both numbers and OperatorTokens.
+Create a function called 'countOperators'.
+This function should take one parameter, a list that will include both numbers and OperatorTokens.
+The funcion should count and return the amount of OperatorTokens in the list.
 </p>
 
 
