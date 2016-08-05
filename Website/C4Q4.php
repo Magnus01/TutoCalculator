@@ -65,11 +65,59 @@
                         <h3><strong>The Grand Finale:</strong> Putting it all together</h3>
                             
 <p id="pp">
-    start...
+    Until now, you have taken a usual mathematical expression, converted it to postfix notation and learned the basics of evaluating that postfix expression. You have learned all the basics of the Javascrip language, such as variable declarations, if/else statements, lists, arrays and stacks, loops, switch statements, built-in functions and more. Now, it's time for you to put all of these fresh concepts and skills, plus all of your previously created code, to good use. This is the final task, and here, you will be creating the main function.
+</p>
+
+<br><h3><em>These are the functions you have created so far:</em></h3><br>
+
+<p id="pp">
+    Chapter 4 - Question 1: <strong>the OperatorToken class</strong>
 </p>
                             
-<br><pre><code class="prettyprint">
+<pre><code class="prettyprint">function OperatorToken(operator, type)
+{
+    this.operator = operator;
+    this.type = type;
+}
+</code></pre><br>
+                 
+<p id="pp">
+    Chapter 4 - Question 2: <strong>the equate function</strong>
+</p>
+                            
+<pre><code class="prettyprint">var equate = function(token, num1, num2)
+{
+    sum = 0;
+    tk = token;
+    switch (tk) {
+    case '+':
+        sum += num1 + num2;
+        break;
+    case '-':
+        sum += num1 - num2;
+        break;
+    case '*':
+        sum += num1 * num2;
+        break;
+    case '/':
+        sum += num1 / num2;
+        break;
+};
+</code></pre><br>
 
+<p id="pp">
+    Chapter 4 - Question 3: <strong>evaluating the postfix stack</strong>
+</p>
+                            
+<pre><code class="prettyprint">var countOperators = function(list) {
+    var count = 0;
+    for (var i = 0; i < list.length; i++) {
+        if (isNaN(list[i])) {
+                    count += 1;
+        }
+    }
+    return count;
+}
 </code></pre><br>
                             
 <p id="pp">                            
@@ -112,10 +160,7 @@ As long as your function is able to correctly compute the expressions we hand it
 					<!--Put the question here!!-->
 					
 			<p><h3><strong>Question 4:</strong> the grand finale</h3>
-Create a function main that takes an array of OperatorTokens and numbers
-in postfix notation.
-F.eks: [2, 4, new OperatorToken("+", "binary")]
-The function should calculate the result of the given expression and return the correct answer.
+Create a function main that takes an array of OperatorTokens and numbers in postfix notation. The function should calculate the result of the given expression and return the correct answer.
 </p>
 
 

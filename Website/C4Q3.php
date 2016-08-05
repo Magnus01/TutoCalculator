@@ -68,8 +68,7 @@
 As we have learned earlier, a "stack" in JavaScript is simply a list of vales (also called an array). You can access the values of your list by specifying the name of the array, and then putting square brackets [] with a number in between. The number will refer to the "index" (the position) of the value you are trying to access. In computer science, we start counting from 0. So if you want to access the first value in your array, you put a zero in between the square brackets.
 </p>
                             
-<br><pre><code class="prettyprint">
-var myArray = [1, 2, "three"];
+<br><pre><code class="prettyprint">var myArray = [1, 2, "three"];
 
 // accessing the first value (1)
 myArray[0];
@@ -85,8 +84,7 @@ myArray[2];
 But what happens if we have a very long list, and we want to access all of the vales after each other? In order to access each one of these values, one after the other, it would be smart to use a for loop. Since we want to access every single value in our list, we have to know how long our list is. You can check the length of a list by using the len() function that's built in to JavaScript. With our knowledge of lists, for loops and the len() function; we can now access every single value in our list; regardless of how long the list is.
 </p>
 
-<br><pre><code class="prettyprint">
-var myArray = [1, 2, "three"];
+<br><pre><code class="prettyprint">var myArray = [1, 2, "three"];
 
 // accessing all values in sequence
 for (var i = 0; i < len(myArray); i++) {
