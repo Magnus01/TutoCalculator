@@ -25,7 +25,7 @@ what follows is an example of how it will look.
   <!-- Add content to the popup -->
   <div id="my_popup">
     
-    <h2 id="hint">You missed a semicolon!<br>stop the madness!!!</h2>
+    <h2 id="hint_showcase">You missed a semicolon!<br>stop the madness!!!</h2>
 
     <!-- Add an optional button to close the popup -->
     <button class="my_popup_close">Close</button>
@@ -38,6 +38,7 @@ what follows is an example of how it will look.
   <!-- Include jQuery Popup Overlay -->
   <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
   <!-- Include the jQuery_hint_showcase script -->
+  <!-- <script src="jQUery_hint_showcase.js"></script> -->
 
   <script>
     $(document).ready(function() {
@@ -47,7 +48,7 @@ what follows is an example of how it will look.
       $('#my_popup').popup({
         // looks
         opacity: 0.3,
-        transition: 'all 0.3s',
+        transition: 'all 3.3s',
         
         //events
         onopen: function() {

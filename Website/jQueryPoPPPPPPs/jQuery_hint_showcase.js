@@ -19,15 +19,17 @@ function jQuery_hint_showcase() {
         ]
     });
 
+    
+    
     // input the code on the site
-
-
-
+    var code = "";// access code from the input field of the color coded editor
+    eval(code); // runs the code, and adds to the javascript environment
+    
+    
     // Run the spec on this code
     jasmine.execute();
     // or this code to specify a specific spec file to run
     jasmine.execute(['fooSpec.js'], 'a spec name');
-
 
 
     // determine if the code fails; and where it fails
@@ -66,23 +68,17 @@ function jQuery_hint_showcase() {
     });
 
 
-    // Create an object with the common mistakes, and the hints that should be played if this is the mistake
+    // Create an object with the common mistakes, and the hints that should be displayed if this is the mistake
     var possible_failures = {
         "missing a semicolon": ["Dude, get that semicolon in place.", "Missing a semicolon; life's really hitting you hard today, huh?"] // adding an array to create variety in the phrasing of the hints
     }
 
 
     // choose the right hint to display based on where the code fails
-    if (what_went_wrong == "") {
-        // congratulations, you finished the task with no mistakes
-    } 
-    else {
-
-        for (var err in possible_failures) {
-            if (err === what_went_wrong) {
-                // setting the value in the hint section
-                $("#hint").text(possible_failures[err]);
-            }
+    for (var err in possible_failures) {
+        if (err === what_went_wrong) {
+            // setting the value in the hint section
+            $("#hint_showcase").text(possible_failures[err]);
         }
     }
 

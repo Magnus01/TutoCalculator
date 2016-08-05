@@ -19,3 +19,18 @@
         1) the css and html for displaying the hint and playin the correct audio
         2) the jasmine determining where the tests failed
         3) the jquery for choosing the right hint, triggering the showing the hint
+
+
+(3) loading all javascript files at the end of the body tag.
+        
+        Doing this will help decrease loadng times. Don't know if there is anything reliant
+        on these scripts that needs to load in the start tho.
+
+
+(4) after each question; let them look at their code... AND THEN COMPARE IT TO OURS!!!
+
+
+(5) at the end; have them view their finished calculator
+
+
+(6) calculator preview - with start tutorial button

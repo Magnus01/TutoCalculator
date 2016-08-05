@@ -29,7 +29,7 @@
 		</noscript>
 		
 	</head>
-	<body >
+	<body>
 
 		<!-- Header -->
 			<header id="header">
@@ -72,6 +72,10 @@
 
 </code></pre><br>
                             
+<p id="pp">                            
+Due to the complexity of this assignment, little care is given to how you've implemented it.
+As long as your function is able to correctly compute the expressions we hand it, it will pass.
+</p>                            
 
                             
 						<div id="test"></div>
@@ -111,10 +115,8 @@
 Create a function main that takes an array of OperatorTokens and numbers
 in postfix notation.
 F.eks: [2, 4, new OperatorToken("+", "binary")]
-The function should calculate the result of the given expression and return the correct answer
-
-Due to the complexity of this assignment, little care is given to how you've implemented it.
-As long as your function is able to correctly compute the expressions we hand it, it will pass.</p>
+The function should calculate the result of the given expression and return the correct answer.
+</p>
 
 
 
