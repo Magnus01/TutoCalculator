@@ -82,7 +82,20 @@ myArray[2];
 </code></pre><br>
                             
 <p id="pp">
-But what happens if we have a very long list, and we want to access all of the vales after each other? In order to access each one of these values, one after the other, it would be smart to use a for loop. Since we want to access every single value in our list, we have to know how long our list is. You can check the length of a list by using the len() function that's built in to JavaScript.
+But what happens if we have a very long list, and we want to access all of the vales after each other? In order to access each one of these values, one after the other, it would be smart to use a for loop. Since we want to access every single value in our list, we have to know how long our list is. You can check the length of a list by using the len() function that's built in to JavaScript. With our knowledge of lists, for loops and the len() function; we can now access every single value in our list; regardless of how long the list is.
+</p>
+
+<br><pre><code class="prettyprint">
+var myArray = [1, 2, "three"];
+
+// accessing all values in sequence
+for (var i = 0; i < len(myArray); i++) {
+    myArray[i];
+}
+</code></pre><br>
+
+<p id="pp">
+The for loop above consists of 3 parts. 1) var i = 0; 2) i < len(myArray); 3) i++ The first parts creates a variable i that is equal to 0. The second part tells the loop to keep going as long as i is less than the lenght of the array. The final part, i++, tells the loop to add 1 to the variable i at the end of each loop instance. If we wanted to check if, for example, each value in the list was a number, we could do by using the isNaN() function.
 </p>
                             
 
