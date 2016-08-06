@@ -1,6 +1,7 @@
 // require
 var calculator = require("../src/C4Q3.js");
 
+
 /*
  * PROBLEM:
  * Create a function called 'countOperators' that counts and returns the number of OperatorTokens in the list.
@@ -16,11 +17,45 @@ OperatorToken = function(operator, type){
 }
 
 // chapter 4 - question 4
-describe("Chapter 4 Task 4", function () {  
-    it("should count the numbers of operators in the given stack", function () {
-        var test1 = [new OperatorToken("+", "binary"), 1, 2];
-        var test2 = [3, 2, 4, new OperatorToken("*", "binary"), new OperatorToken("+", "binary")];
-        expect(calculator.countOperators(test1)).toBe(1);
-        expect(calculator.countOperators(test2)).toBe(2);
+describe("Chapter 4 Question 3", function () {
+    
+    describe("The countOperators funciton", function () {
+        
+        // definition of testing arrays
+        var easyArray = [new OperatorToken("+", "binary"), 1, 2];
+        var mediumArray = [3, 2, 4, new OperatorToken("*", "binary"), new OperatorToken("+", "binary")];
+        var hardArray = [3, 2, 4, new OperatorToken("*", "binary"), new OperatorToken("+", "binary"), new OperatorToken("+", "binary"), 1, 2];
+        
+        
+        beforeEach(function() {
+            spyOn(calculator, 'countOperators').and.callThrough();
+        });
+        
+        it("should be defined", function () {
+            expect(calculator.countOperators).toBeDefined();
+        });
+        
+        it("should have been called", function () {
+            calculator.countOperators(easyArray);
+            expect(calculator.countOperators).toHaveBeenCalled();
+        });
+        
+        it("should have been called with the array named testArray", function() {
+            calculator.countOperators(easyArray);
+            expect(calculator.countOperators).toHaveBeenCalledWith(easyArray);
+        });
+        
+        it("should count the operator tokens in the easyArray", function () {
+            expect(calculator.countOperators(easyArray)).toBe(1);
+        });
+        
+        it("should count the operator tokens in the mediumArray", function () {
+            expect(calculator.countOperators(mediumArray)).toBe(2);
+        });
+        
+        it("should count the operator tokens in the hardArray", function () {
+            expect(calculator.countOperators(hardArray)).toBe(3);
+        });
     });
+    
 });
