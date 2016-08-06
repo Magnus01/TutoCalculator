@@ -14,3 +14,6 @@ var countOperators = function(list)
 
 // must be added to students solution.
 exports.countOperators = countOperators;
+
+
+
