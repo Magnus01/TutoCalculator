@@ -8,6 +8,7 @@ var infix= ["2", "+", "2"];
 var isNumeric = function(token){
     return !isNaN(parseFloat(token)) && isFinite(token);
 }
+
 function MathSolver(){
     
         this.infixToPostfix = function(infix) {
@@ -41,6 +42,8 @@ function MathSolver(){
                 postfixStack.push(Number(token));
             }
              else if("^*/+-".indexOf(token) !== -1)
+                 console.log(("^*/+-".indexOf(token), "what is index")
+                 
                {
                 var o1 = token;
                 var o2 = operatorStack[operatorStack.length - 1];
