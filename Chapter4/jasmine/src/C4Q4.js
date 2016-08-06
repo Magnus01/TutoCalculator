@@ -36,7 +36,7 @@ var main = function(tokenStack)
             else if(inputToken.type == "sign")
             {
                 num = numberStack.pop();
-                numberStack.push(-num);
+                numberStack.push(-  num);
             }
         }
         else

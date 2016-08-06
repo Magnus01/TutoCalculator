@@ -40,7 +40,7 @@ describe("Chapter 4 Question 3", function () {
             expect(calculator.countOperators).toHaveBeenCalled();
         });
         
-        it("should have been called with the array named testArray", function() {
+        it("should have been called with the array named easyArray", function() {
             calculator.countOperators(easyArray);
             expect(calculator.countOperators).toHaveBeenCalledWith(easyArray);
         });
