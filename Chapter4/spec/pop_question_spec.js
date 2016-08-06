@@ -12,14 +12,13 @@ describe("Pop question [temp name]", function()
                     {
                         expect(sol.reverseList).toBeDefined();
                      });
-            it("should not be defined", function()
+            it("should return an empty list when given an empty list", function()
                     {
-                        //expect(sol.test).toBeDefined();
+                        expect(sol.reverseList([])).toEqual([]);
                      });
             it("should reverse [1,2,3] to be [3,2,1]", function()
                     {
                         tst_list = [1,2,3]
                         expect(sol.reverseList(tst_list)).toEqual([3,2,1]);
-                        console.log("list after reverse: "+ sol.reverseList(tst_list));
                     });
         });

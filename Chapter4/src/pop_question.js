@@ -8,9 +8,7 @@ var reverseList = function(list)
     reverse = new Array();
     for (var i = 0; i<n; i++)
     {
-        console.log(list);
         reverse.push(list.pop());
-        console.log(reverse);
     }
     return reverse;
 };
