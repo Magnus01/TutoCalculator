@@ -13,6 +13,7 @@ function MathSolver(){
     
         this.infixToPostfix = function(infix) {
         var operatorStack = [];
+            
         var operators = {
             "^": {
                 precedence: 4,
@@ -36,13 +37,13 @@ function MathSolver(){
             }
         }
         
+        
         for (var i = 0; i < infix.length; i++) {
             var token = infix[i];
             if(isNumeric(token)) {
                 postfixStack.push(Number(token));
             }
              else if("^*/+-".indexOf(token) !== -1)
-                 console.log(("^*/+-".indexOf(token), "what is index")
                  
                {
                 var o1 = token;

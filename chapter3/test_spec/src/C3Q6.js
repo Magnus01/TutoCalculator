@@ -1,9 +1,9 @@
 MathUtils = function() {};
 
-var city = ["LA", "Oslo", "Grimstad", "London"]
 
-MathUtils.prototype.Pop = function () {
-    return city.pop();
+
+MathUtils.prototype.Pop = function (x) {
+    return x.pop();
 };
 
 exports.MathUtils = function() {

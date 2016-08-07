@@ -29,12 +29,12 @@ describe("MathUtils", function() {
         it("should HAVE BEEN CALLED", function() {
             calc.Pop(["LA", "Oslo", "Grimstad", "London"]); 
             expect(calc.Pop).toHaveBeenCalled();
-            expect(calc.Pop).toHaveBeenCalledWith(["LA", "Oslo", "Grimstad", "London"]);
+            expect(calc.Pop).toHaveBeenCalledWith(["LA", "Oslo", "Grimstad"]);
              
            
     });
       it("IS IT ADDED", function() {
-            expect(calc.Pop(["LA", "Oslo", "Grimstad", "London"])).toBe("Oslo");
+            expect(calc.Pop(["LA", "Oslo", "Grimstad", "London"])).toBe("London");
              
            
     });  
