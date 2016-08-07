@@ -38,6 +38,16 @@ describe("MathUtils", function() {
              
            
     });  
+        
+it("Does it contain??", function() {
+            
+           // var product = calculator.postfixStack.toString()
+             var product = console.log(calculator+ "What does this print out")
+             console.log(product+ "What does this print out");
+            expect(product).toContain("postfixStack");
+            console.log(typeof(product)+ "What is this");
+           
+         }); 
 
 });
 });

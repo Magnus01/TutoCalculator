@@ -20,3 +20,13 @@ exports.MathUtils = function (){
     return MathUtils;
 };
 
+
+
+exports.isNumeric = function(x) {  
+    return isNumeric(x);
+}
+
+
+exports.MathSolver = function(infix) {  
+    return MathSolver(infix);
+}
