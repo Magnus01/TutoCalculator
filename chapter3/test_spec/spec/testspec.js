@@ -1,6 +1,6 @@
 var sol = require("../src/test2.js");
 
-//var product = console.log(sol.isNumeric.toString());
+console.log(sol.isNumeric.toString());
 
 
 
@@ -13,7 +13,7 @@ it("Does it contain??", function() {
           // console.log(product+ "PRODUCT")
     var product = sol.isNumeric.toString();
     console.log(product);
-          expect(product).toContain(["function"]);
+          expect(product).toContain(["return !isNaN(parseFloat(x))"]);
 
            
          }); 
