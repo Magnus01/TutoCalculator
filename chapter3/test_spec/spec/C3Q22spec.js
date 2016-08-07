@@ -8,6 +8,8 @@ console.log(calculator.operators["+"].precedence);
 
 describe("precedence", function ()
 {
+    
+    
   it("check precedence", function () 
   {
 
@@ -16,6 +18,17 @@ describe("precedence", function ()
     var product = solution["^"].precedence;
     
     expect(product).toBe(4);
+    expect(solution["-"].precedence).toBe(2)
+    expect(solution["+"].precedence).toBe(2)
+    expect(solution["/"].precedence).toBe(3)
+    expect(solution["*"].precedence).toBe(3)
+    expect(solution["^"].precedence).toBe(4)
   });
+    it("Is it Defined??", function() {
+            var product = solution["^"].precedence;
+            expect(solution["-"].precedence).toBeDefined();
+            console.log(typeof(solution["-"].precedence)+ "What is this");
+         });
 });    
+
 

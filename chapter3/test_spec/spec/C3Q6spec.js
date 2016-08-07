@@ -10,10 +10,10 @@ describe("MathUtils", function() {
         spyOn(calc, 'Pop').andCallThrough();
     });
  
-    describe("when calc is used to peform basic math operations", function(){
+    describe(When using Pop function", function(){
          
        
-        it("should be able to calculate sum of 3 and 5", function() {
+        it("should be able take out the last string in an array", function() {
            
             calc.Pop(["LA", "Oslo", "Grimstad", "London"]);   
         });
@@ -33,7 +33,7 @@ describe("MathUtils", function() {
              
            
     });
-      it("IS IT ADDED", function() {
+      it("IS IT Popped", function() {
             expect(calc.Pop(["LA", "Oslo", "Grimstad", "London"])).toBe("London");
              
            

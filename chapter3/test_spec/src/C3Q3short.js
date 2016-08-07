@@ -1,10 +1,12 @@
+MathUtils = function() {};
+
 var postfixStack = [];
 
 function isNumeric(x) {
     return !isNaN(parseFloat(x)) && isFinite(x);
 }
 
-MathSolver = function (infix) {
+MathUtils.prototype.MathSolver = function (infix) {
     postfixStack = [];
     for (var i = 0; i < infix.length; i++) {
         var token = infix[i];
@@ -14,7 +16,7 @@ MathSolver = function (infix) {
     } 
     return postfixStack;
 }
-exports.MathSolver = function (infix){
-    return MathSolver(infix);
+exports.MathUtils = function (){
+    return MathUtils;
 };
 

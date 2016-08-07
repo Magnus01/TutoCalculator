@@ -2,10 +2,10 @@ MathUtils = function() {};
 
 
 
-var postfixStack = new Array;
-var array = ["2", "3", "2"];
+var postfixStack = [];
 
-MathUtils.prototype.pushToArray = function() {
+
+MathUtils.prototype.pushToArray = function(array) {
     for(var i = 0; i < array.length; i++){
         var token = array[i];
         postfixStack.push(token);
@@ -21,22 +21,3 @@ exports.MathUtils = function () {
     return MathUtils;
 };
 
-var postfixStack = [];
-
-function isNumeric(x) {
-    return !isNaN(parseFloat(x)) && isFinite(x);
-}
-
-MathSolver = function (infix) {
-    postfixStack = [];
-    for (var i = 0; i < infix.length; i++) {
-        var token = infix[i];
-        if (isNumeric(token) == true) {
-            postfixStack.push(Number(token));          
-        } 
-    } 
-    return postfixStack;
-}
-exports.MathSolver = function (infix){
-    return MathSolver(infix);
-};

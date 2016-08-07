@@ -1,4 +1,4 @@
-var calculator = require("../src/C3Q3.js");
+var calculator = require("../src/C3Q3short.js");
 
 describe("MathUtils", function() {
     
