@@ -73,10 +73,18 @@ console.log(code_as_string[for_parenthesis_end]);
 console.log(for_in_parts);
 console.log(test.t.toString());
 
-
+// evalute the three expressions, and print out the variable value after each of them.
 eval(for_in_parts[0]);
 console.log(eval(count_variable_name));
 eval(for_in_parts[1]);
 console.log(eval(count_variable_name));
 eval(for_in_parts[2]);
 console.log(eval(count_variable_name));
+
+
+/*****************
+
+Add this to an actual unit test.
+    C2Q4
+
+*****************/
