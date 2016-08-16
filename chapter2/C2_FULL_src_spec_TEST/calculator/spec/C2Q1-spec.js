@@ -1,13 +1,43 @@
 var calculator = require("../src/C2Q1.js");
 
-describe("add", function () {
-  it("should multiply 2 and 3", function () {
-    var product = calculator.add(2, 3);
-    expect(product).toBe(5);
-  });
+describe("MathUtils", function() {
     
-     it("should add 3 and 5", function () {
-    var product = calculator.add(3, 5);
-    expect(product).toBe(8);
-  });
-});    
+ 
+    beforeEach(function() {
+      
+        calc = new MathUtils(3, 5);
+        console.log(typeof(calc)+ "object");
+        spyOn(calc, 'sum').andCallThrough();
+    });
+ 
+    describe("when calc is used to peform basic math operations", function(){
+         
+       
+        it("should be able to calculate sum of 3 and 5", function() {
+           
+            calc.sum(3,5);   
+        });
+        
+        it("Is it Defined??", function() {
+            
+            expect(calc.sum).toBeDefined();
+            console.log(typeof(calc.sum)+ "function");
+ 
+    });
+        
+        
+        it("should HAVE BEEN CALLED", function() {
+            calc.sum(3,5); 
+            expect(calc.sum).toHaveBeenCalled();
+            expect(calc.sum).toHaveBeenCalledWith(3,5);
+             
+           
+    });
+      it("IS IT ADDED", function() {
+            expect(calc.sum(3,5)).toBe(8);
+             
+           
+    });  
+
+});
+});  

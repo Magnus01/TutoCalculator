@@ -8,10 +8,12 @@ var infix= ["2", "+", "2"];
 var isNumeric = function(token){
     return !isNaN(parseFloat(token)) && isFinite(token);
 }
+
 function MathSolver(){
     
         this.infixToPostfix = function(infix) {
         var operatorStack = [];
+            
         var operators = {
             "^": {
                 precedence: 4,
@@ -35,12 +37,14 @@ function MathSolver(){
             }
         }
         
+        
         for (var i = 0; i < infix.length; i++) {
             var token = infix[i];
             if(isNumeric(token)) {
                 postfixStack.push(Number(token));
             }
              else if("^*/+-".indexOf(token) !== -1)
+                 
                {
                 var o1 = token;
                 var o2 = operatorStack[operatorStack.length - 1];

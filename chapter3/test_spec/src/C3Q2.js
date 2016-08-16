@@ -1,4 +1,6 @@
 var operators = {
+    "name": 5,
+    notstring: 6,
             "^":  4,
             "*": 3,
             "/": 2,
@@ -7,6 +9,5 @@ var operators = {
  };
     
 
-exports.StudentSolution = function() {
-    return operators;
-};
+exports.Operators = Operators;
+

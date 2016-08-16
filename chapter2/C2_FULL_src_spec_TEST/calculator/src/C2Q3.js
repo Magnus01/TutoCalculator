@@ -1,5 +1,4 @@
-/*
-IGNORE
+
 exports.Contact = function(name,profession, number)
 {
     this.name = name;
