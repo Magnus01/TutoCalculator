@@ -1,0 +1,57 @@
+﻿
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="live.js" type="text/javascript"></script>
+        <script src="appstack.js"></script>
+        <script src="calculate.js"></script>
+        <script>
+            var run = function()
+                {
+                    var ourExpression = document.getElementById("input_expression").value;
+                    console.log("am i running at all",ourExpression);
+                    var ms  = new MathSolver();
+                    console.log(ms.infixToPostfix(ourExpression));
+                    setStack(printStack());
+                    main();
+                    console.log("the stack: ", postfixStack);
+                }
+        </script>
+        <script src="GUI.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+    </head>
+    <body>
+        <!-- GUI input in the middle -->
+        <div class="focusInTheMiddle">
+            <input type="text" name="expression" id="input_expression" onKeyPress="liveUpdate()" onKeyUp="liveUpdate()" placeholder="type 2+2..." name="input_expression" autofocus>
+            <p id="rpn_result">Reverse Polish Notation: <span id="postfix_output">0</span></p>
+            <b><p id="calc_result">✓ <span id="result_output">0</span></p></b>
+        </div>
+        
+        <!--✗<input type="text" name="expression" id="input_expression" onKeyPress="liveUpdate()" onKeyUp="liveUpdate()" autofocus>
+        <button onclick="run()">Click me</button> 
+        <div class="container">
+            <div class="row">
+                <p id="rpn_result">RPN:<span id="postfix_output">0</span></p>
+                <p id="calc_result">RESULT: <span id="result_output">0</span></p>
+            </div>
+        </div>-->
+        
+        <!-- GUI with OPERATORS -->
+        <div class="fourMusk3teers">
+            <div class="thePlus">
+                <button onclick="clickExpression('+', 'input_expression')">+</button>
+            </div>
+            <div class="theMinus">
+                <button onclick="clickExpression('-', 'input_expression')">-</button>
+            </div>
+            <div class="theMultiplyer">
+                <button onclick="clickExpression('*', 'input_expression')">*</button>
+            </div>
+            <div class="theDivider">
+                <button onclick="clickExpression('/', 'input_expression')">/</button>
+            </div>
+        </div>
+    </body>
+</html>

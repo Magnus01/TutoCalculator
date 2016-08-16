@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		
+		<title>TutoCalculator</title>
+
+
+
+<script>//script for the tutorial
+function ValidateContactForm()
+{
+    var one = document.ContactForm.one;
+    var two = document.ContactForm.two;
+    var three = document.ContactForm.three;
+    var four = document.ContactForm.four;
+    var five = document.ContactForm.five;
+    var six = document.ContactForm.six;
+
+    if (one.value == "23*4+")
+    {
+        window.alert("Correct");
+        return true;}
+    else{
+        window.alert("Hint: Reread infix to postfix.");
+        one.focus();
+        
+            return false
+    }
+    //question 2
+    if (two.value == "10")
+    {
+        window.alert("Correct");
+        return true;}
+    else{
+        window.alert("Hint: Reread postfix to calculation.");
+        two.focus();
+        
+            return false
+    }
+    //question 3
+    if (three.value == "34^3*8+")
+    {
+        window.alert("Correct");
+        return true;}
+    else{
+        window.alert("Hint: Reread postfix to calculation.");
+        three.focus();
+        
+            return false
+    }
+if (four.value == "35")
+    {
+        window.alert("Correct");
+        return true;}
+    else{
+        window.alert("Hint: Reread postfix to calculation.");
+        four.focus();
+        
+            return false
+    }
+if (five.value == "93*4+(23*)-")
+    {
+        window.alert("Correct");
+        return true;}
+    else{
+        window.alert("Hint: Reread postfix to calculation.");
+        five.focus();
+        
+            return false
+    }
+if (six.value == "93*4+(23*)-")
+    {
+        window.alert("Correct");
+        return true;}
+    else{
+        window.alert("Hint: Reread postfix to calculation.");
+        six.focus();
+        
+            return false
+    }
+}
+
+
+</script>
+		
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		
+	</head>
+	<body >
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html"><img src="images/LogoUIA.png"/></a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Calculator.html">Tutorial</a></li>
+						<li><a href="inscriptionCal.html">Subscription</a></li>
+						<li><a href="#">Project team</a></li>
+					</ul> 
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+				
+					<header class="major">
+						<h2>Calculator Tutorial</h2>
+						<p>In this page, you can find a tutorial on how to implement a calculator. </p>
+					</header>
+
+					        
+					
+							
+					<!-- Form -->
+			
+							<!-- Table -->
+						<section>
+						<h2>First Section</h2>
+						<p>Write your answer on the inputs below. A message will be display to tell you if it's correct or not.</p>
+						
+						
+						
+						
+						
+						<!--Essai one --> 
+						<!--Listing des salles de cinéma franciliennes-->
+	
+	<div class="container" >
+
+        <div class="row">                                 
+            <div class="form-group col-md-3">
+              
+							</div>
+							
+
+						<form method="post" action="mailto:Frank@cohowinery.com" 
+							name="ContactForm" onsubmit="return ValidateContactForm();">
+								<p>1.Convert the following expression from infix to postfix: 2*3+4  <input type="text" size="65" name="one"></p>
+									<p>2.Now calculate that postfix expression   <input type="text" size="65" name="two"></p>
+								<p>3.Convert the following expression from infix to postfix: 8+3*3^2 <input type="text" size="65" name="three"><br>
+								<p>4.Now calculate that postfix expression.  <input type="text" size="65" name="four"><br>
+						<p>5.Convert the following expression from infix to postfix: 9*3+4-(2*3)  <input type="text" size="65" name="five"><br>
+								<p>6.Now calculate that postfix expression.  <input type="text" size="65" name="six"><br>
+        
+  
+							<p>Comments:  <textarea cols="55" name="Comment">  </textarea></p>
+							<p><input type="submit" value="Send" name="submit">
+					<input type="reset" value="Reset" name="reset"></p>
+							</form>
+
+							
+							
+							
+							
+							</div>
+						</section>
+							
+
+							
+							
+							<!--                                           *****Some useful tools ****
+							<form method="post" action="#">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="name" id="name" value="" placeholder="Adresse de départ" />
+									</div>
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="name" id="name" value="" placeholder="Adresse d'arrivée" />
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+										<input type="email" name="email" id="email" value="" placeholder="Email" />
+									</div>
+									<div class="12u$">
+										<div class="select-wrapper">
+											<select name="category" id="category">
+												<option value="">- Catégorie -</option>
+												<option value="1">Etudiant</option>
+												<option value="1">Personnel de l'EPF</option>
+												<option value="1">Intervenant extérieur</option>
+											</select>
+											
+										</div>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="priority-low" name="priority" checked>
+										<label for="priority-low">Low Priority</label>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="priority-normal" name="priority">
+										<label for="priority-normal">Normal Priority</label>
+									</div>
+									<div class="4u$ 12u$(small)">
+										<input type="radio" id="priority-high" name="priority">
+										<label for="priority-high">High Priority</label>
+									</div>
+									<div class="6u 12u$(small)">
+										<input type="checkbox" id="copy" name="copy">
+										<label for="copy">Email me a copy of this message</label>
+									</div>
+									<div class="6u$ 12u$(small)">
+										<input type="checkbox" id="human" name="human" checked>
+										<label for="human"></label>
+									</div>
+									
+									<div class="12u$">
+										<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="12u$">
+										<ul class="actions">
+											<li><input type="submit" value="Rechercher" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>-->
+									
+									
+								</div>
+							
+						</section>
+
+					
+					
+					
+					
+					
+					
+				</div>
+			
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="4u 6u(medium) 12u$(small)">
+							<h3>Practical informations</h3>
+							<p>Do you need an information?</p>
+							<ul class="alt">
+								<li><a href="#">How the website works?</a></li>
+								<li><a href="#">Frequently Asked Questions</a></li>
+								
+								<li><a href="#">About the team project</a></li>
+							</ul>
+						</section>
+						
+						<!--<section class="4u 6u$(medium) 12u$(small)">
+							<h3>Nostrum, repellat!</h3>
+							<p>Tenetur voluptate exercitationem eius tempora! Obcaecati suscipit, soluta earum blanditiis.</p>
+							<ul class="alt">
+								<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+								<li><a href="#">Id inventore, qui necessitatibus sunt.</a></li>
+								<li><a href="#">Deleniti eum odit nostrum eveniet.</a></li>
+								<li><a href="#">Illum consectetur quibusdam eos corporis.</a></li>
+							</ul>
+						</section>-->
+						
+						<section class="4u$ 12u$(medium) 12u$(small)">
+							<h3>Contact us</h3>
+							<ul class="icons">
+								<li><a href="#" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon rounded fa-pinterest"><span class="label">Pinterest</span></a></li>
+								<li><a href="#" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="#" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="tabular">
+								<li>
+									<h3>Address</h3>
+									Gimlemoen 25, 4630 Kristiansand S, Norvège<br>
+									
+								</li>
+								<li>
+									<h3>Mail</h3>
+									<a href="#">magnusl15@uia.no</a>
+								</li>
+								<li>
+									
+								</li>
+							</ul>
+						</section>
+					</div>
+					<ul class="copyright">
+						<li>&copy; UiA. All rights reserved.</li>
+						<li>Design: <a href="">Calculator Tutorial</a></li>
+						<li>Images: <a href="">Calculator Tutorial</a></li>
+					</ul>
+				</div>
+			</footer>
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
