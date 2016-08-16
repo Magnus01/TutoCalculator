@@ -5,7 +5,7 @@
 
 MathUtils = function() {
     
-}
+};
 
 MathUtils.prototype.isNumeric = function (x) {
     return !isNaN(parseFloat(x)) && isFinite(x);

@@ -1,5 +1,8 @@
      var operators = {
-            
+             "^": {
+                precedence: 4,
+                associativity: "Left"
+            },
             "/": {
                 precedence: 3,
                 associativity: "Left"
@@ -18,4 +21,4 @@
             }
         };
      
-exports.operators = operators;
+exports.operators = operators

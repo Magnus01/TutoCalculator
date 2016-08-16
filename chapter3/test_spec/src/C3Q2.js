@@ -1,4 +1,3 @@
-
 var operators = {
     "name": 5,
     notstring: 6,
@@ -10,5 +9,5 @@ var operators = {
  };
     
 
-exports.operators = operators;
+exports.Operators = Operators;
 

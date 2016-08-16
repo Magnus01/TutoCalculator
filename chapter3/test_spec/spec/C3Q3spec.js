@@ -1,5 +1,13 @@
 var calculator = require("../src/C3Q3short.js");
 
+var sol = require("../src/C3Q3short.js");
+
+console.log("body", sol.MathSolver)
+
+console.log("SOL OPERATORS STRING", sol.MathSolver);
+
+
+
 describe("MathUtils", function() {
     
  
@@ -39,15 +47,39 @@ describe("MathUtils", function() {
            
     });  
         
-it("Does it contain??", function() {
+it("Does the MathSolver Contain the correct essential code?", function() {
             
-           // var product = calculator.postfixStack.toString()
-             var product = console.log(calculator+ "What does this print out")
-             console.log(product+ "What does this print out");
-            expect(product).toContain("postfixStack");
-            console.log(typeof(product)+ "What is this");
-           
+           var MathSolverStr = sol.MathSolver.toString();
+           var postfixStackStr = sol.postfixStack1.toString();
+           //  var product = console.log(sol.MathSolver+ "What does this print out")
+             console.log(MathSolverStr+ "_Math Solver String");
+           console.log(postfixStackStr+ "_postfixStack String");
+    
+           expect(postfixStackStr).toContain("var postfixStack = []"); //CAN WE HAVE AN OR HERE TO GET MULTIPLE SYNTAX POSSIBILITIES
+        
+           expect(MathSolverStr).toContain("for (var i = 0; i < infix.length; i++)"); 
+        
+    expect(MathSolverStr).toContain("var token = infix[i];"); 
+     expect(MathSolverStr).toContain("if (isNumeric(token) == true)"); 
+    expect(MathSolverStr).toContain("postfixStack.push(Number(token)"); 
+       
+         }); 
+        
+        it("Is the postfixStack included?", function() {
+           var postfixStackStr = sol.postfixStack1.toString();
+           console.log(postfixStackStr+ "_postfixStack String");   
+           expect(postfixStackStr).toContain("var postfixStack = []"); //CAN WE HAVE AN OR HERE TO GET MULTIPLE SYNTAX POSSIBILITIES
+                 
+         }); 
+          it("Is the isNumeric Function included?", function() {
+           var isNumericStr = sol.isNumeric.toString();
+           console.log(isNumericStr+ "_postfixStack String");           
+          expect(isNumericStr).toContain(["return !isNaN(parseFloat(x))"]);
+          expect(isNumericStr).toContain(["function"]);
+          expect(isNumericStr).toContain(["return !isNaN(parseFloat(x)) && isFinite(x);"]);
          }); 
 
 });
 });
+
+
