@@ -6,12 +6,13 @@ describe("MathUtils", function() {
     beforeEach(function() {
       
         calc = new MathUtils(["LA", "Oslo", "Grimstad", "London"]);
-        console.log(typeof(Pop)+ "object");
+        console.log(typeof(calc)+ "object");
         spyOn(calc, 'Pop').andCallThrough();
     });
  
-    describe(When using Pop function", function(){
-         
+    describe("When using Pop function", function(){
+        var something = calculator.Pop.toString();
+        console.log(something);
        
         it("should be able take out the last string in an array", function() {
            
@@ -24,6 +25,9 @@ describe("MathUtils", function() {
             console.log(typeof(calc.Pop)+ "function");
  
     });
+        it("Check if indexOf was used", function () {
+           expect(something).toContain("pop");
+        });
         
         
         it("should HAVE BEEN CALLED", function() {
