@@ -63,7 +63,7 @@
 			
 							<!-- Table -->
 						<section>
-						<h2>Second Chapter</h2>
+						<h2>Second Chapter </h2>
 						
 						
 						
@@ -101,9 +101,6 @@ car.brake()<br/>
 car.stop()<br/><br/></i>
 A car has several methods like “start”, “drive”, “brake” and “stop”. Methods are more complicated than properties. They are functions in JavaScript and will be explained in the next part. To access the method of a particular object in JavaScript it is written like the example above ObjectName.MethodName().
 </p>
-
-
-
 
 
 
@@ -212,7 +209,94 @@ height: 100%;
 
  
  
+}#menuQuestion2{  backface-visibility: hidden;
+    transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+    position: fixed;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0px;
+    left: -250px;
+    transform: translate(250px, 0px);
+    max-width: 100%;
+    max-height: 100%;
+    width: 250px;
+    height: 100%;} 
+#menuQuestion{
+  position: fixed;
+  top: 0;
+ left: -250px;
+  width: 250px; height: 100%;
+transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+ transform: translate(250px, 0px);
+
+ background-image: linear-gradient(70deg, #181818 50%, #1a1a1a 50%);
+    color: #888;
+	
+	  
+	
+	
+	
 }
+#menuQuestion nav {
+		
+			padding: 0.5em 1.25em;
+		}
+
+			#menuQuestion nav > ul {
+				list-style: none;
+				margin: 0;
+				padding-left: 0;
+			}
+
+				#menuQuestion nav > ul > li {
+					border-radius: 4px;
+					display: inline-block;
+					margin-left: 1.5em;
+					padding-left: 0;
+				}
+
+					#menuQuestion nav > ul > li a {
+						-moz-transition: color 0.2s ease-in-out;
+						-webkit-transition: color 0.2s ease-in-out;
+						-o-transition: color 0.2s ease-in-out;
+						-ms-transition: color 0.2s ease-in-out;
+						transition: color 0.2s ease-in-out;
+						color: #cee8d8;
+						display: inline-block;
+						text-decoration: none;
+					}
+
+						#menuQuestion nav > ul > li a:hover {
+							color: #ffffff;
+						}
+
+					
+
+					#menuQuestion nav > ul > li .button {
+						height: 2.25em;
+						line-height: 2.25em;
+						margin-bottom: 0;
+						padding: 0 1em;
+						position: relative;
+						top: -0.075em;
+						vertical-align: middle;
+					}
+
+
+					
+			#navButton .toggle {
+		text-decoration: none;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+		
+					
+					
+
 </style>
 
 <!--
@@ -226,11 +310,24 @@ height: 100%;
 <textarea name="answer1" rows="8" cols="45" placeholder="test"></textarea>
 </form>-->
 
- <div id="canva"><iframe id="view"></iframe><div id="fixed" style="height: 100%;">Your answer here.</div>
+ <div id="canva"><iframe id="view"></iframe><div id="fixed" style="height: 100%;"> &lt;script type="text/javascript"&gt;       
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/script&gt; </div>
  <div id="test2"></div>
 
 						<div id="test"></div>
- <form action="C2Q1tarek2.php" method="post">
+ <form action="C2Q1tarek2IFRAME.php" method="post">
  
  <textarea name="answer" rows="8" cols="45" ></textarea>
  
@@ -244,7 +341,15 @@ height: 100%;
 
 
 
-
+<div id="menuQuestio"><span class="toggle" ></span>
+<nav id="nav">
+					<ul>
+						<li><a href="C2Q1tarek2IFRAME.php">Refreshtest</a></li>
+						<li><a href="Calculator.html">Tutorial</a></li>
+						<li><a href="inscriptionCal.php">Subscription</a></li>
+						<li><a href="#">Project team</a></li>
+					</ul> 
+				</nav></div>
 			
 			
 			
@@ -359,14 +464,23 @@ Functions do not do anything until they are invoked (summoned) to do something, 
 		 //echo '<script> alert("ca marche") ;location.href="C2Q1download.js"</script>';
 		
    // }
-				
+			function remplaceMoi($chaine) {
+    $aRemplacer = array('</script>', '<script>', '<script type="text/javascript">'); // etc... tu met ici tout ce que tu veux remplacer
+    return $traitement = str_replace($aRemplacer, '', $chaine); // Si la chaine se fini pour exemple par "chaine ?!!", il faut virer l'espace avec trim() une fois les autres caractères emplacés, sinon on se retrouve avec un "-" en fin de chaine "...chaine-"
+			}
+
+			
    function Correction() {
 	   
 	   $coucou = $_POST['answer'];
 	   echo $coucou;
-				 echo '<script>alert("coucou" );</script>';  
+				 echo '<script>alert("coucou1" );</script>';  
 	   echo '<script>alert(' . $_POST['answer'] . ');</script>'; 
 	   echo '<script>alert(' . $coucou . ');</script>';
+				
+				
+				$PostAnswer=remplaceMoi($_POST['answer']);
+				
 				
 					$monfichier = fopen('Jasmine_Code/npm/node_modules/jasmine/bin/src/C2Q1.js', 'w+');  //Open the js file with permission to read and write
 
@@ -378,7 +492,7 @@ Functions do not do anything until they are invoked (summoned) to do something, 
 						
 						
 				        fseek($monfichier, 0);  //point on the first line
-						fputs($monfichier, $_POST['answer'] . ' exports.add = function (add1, add2) {
+						fputs($monfichier, $PostAnswer . ' exports.add = function (add1, add2) {
 																return add(add1, add2);
 															};');    //post the answer
 																
@@ -662,10 +776,14 @@ editor.getSession().setUseWrapMode(true);
     editor.getSession().setMode("ace/mode/javascript"); //works for JS
 	
    //VIEW function
+   // editor.getSession().on('change', function () {
+    // view.contents().find('body').html(editor.getSession().getValue());
+// });
    editor.getSession().on('change', function () {
-    view.contents().find('body').html(editor.getSession().getValue());
+    view.contents().find('body').html("<iframe style=\"height: 100%;width: 100%;\" src=" +
+             "data:text/html," + encodeURIComponent(editor.getSession().getValue()) +
+        "></iframe>");
 });
-   
 
   $('#submit1').on('click', function() {
         textarea.val(editor.getSession().getValue());alert("héhaaaa");
