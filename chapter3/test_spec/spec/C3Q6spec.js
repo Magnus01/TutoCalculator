@@ -1,5 +1,8 @@
 var calculator = require("../src/C3Q6.js");
 
+
+var sol = require("../src/C3Q6.js");
+
 describe("MathUtils", function() {
     
  
@@ -10,7 +13,7 @@ describe("MathUtils", function() {
         spyOn(calc, 'Pop').andCallThrough();
     });
  
-    describe(When using Pop function", function(){
+    describe("When using Pop function", function(){
          
        
         it("should be able take out the last string in an array", function() {
@@ -35,9 +38,20 @@ describe("MathUtils", function() {
     });
       it("IS IT Popped", function() {
             expect(calc.Pop(["LA", "Oslo", "Grimstad", "London"])).toBe("London");
-             
-           
+       
     });  
+                it("Does the pushToArray Contain the correct essential code?", function() {
+            
+           var PopStr = sol.Pop.toString();
+           
+            var product = console.log(PopStr+ "What does this print out")
+            
+             expect(PopStr).toContain("function"); 
+           expect(PopStr).toContain("return x.pop();"); 
+    
+               
+       
+         }); 
 
 });
 });  

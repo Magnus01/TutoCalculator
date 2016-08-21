@@ -1,9 +1,9 @@
-var sol = require("../src/C3Q22.js");
+var sol = require("../src/test2.js");
 
-console.log(sol.operators.toString() + "GETS");
+console.log(sol.isNumeric.toString() + "GETS");
 
-console.log(sol.operators + "THIS MUST PRINT IT OUT");
-console.log(sol.operators["+"].precedence);
+console.log(sol.isNumeric + "THIS MUST PRINT IT OUT");
+console.log(sol.isNumeric["+"].precedence);
             
  //console.log(calculator[name] +"Hey");
 
@@ -38,11 +38,11 @@ describe("precedence", function ()
           // console.log(product+ "PRODUCT")
  var string = sol.operators.toString()
     console.log(string);
-          expect(string).toContain(["^"]);
-          expect(string).toContain(["precedence: 4"]);
+          expect(string).toContain("^");
+          expect(string).toContain("precedence: 4");
         
-          expect(string).toContain(["function (x)"]);
-          expect(string).toContain(["return !isNaN(parseFloat(x)) && isFinite(x);"]);
+          expect(string).toContain("function (x)");
+          expect(string).toContain("return !isNaN(parseFloat(x)) && isFinite(x);");
 
            
          }); 

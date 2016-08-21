@@ -1,21 +1,53 @@
-var calculator = require("../src/C3Q22.js");
+var sol = require("../src/operators.js");
+
+console.log("body", sol.operators1)
+
+console.log("SOL OPERATORS STRING", sol.operators1);
+//var re = {([\s\S]*?)^};
+//var m = "sol.Operators".match(re)
+//var m = "{helloworld}".match(re);
+//if (m != null)
+  //  console.log(m[0].replace(re, '$1') ,"hellO");
+
+console.log(sol.operators1.toString());
 
 
-console.log(calculator.operators.precedence[^]);
- //console.log(calculator[name] +"Hey");
-//for strings access using square brackets
-//for variables access using . notation                                            
+describe("operators", function() {
 
-describe("precedence", function ()
-{
+    
   it("check precedence", function () 
   {
 
-    solution = calculator.operators;
+    solution = sol.operators;
     
-    var product = solution["^"];
+    var product = solution["^"].precedence;
     
     expect(product).toBe(4);
+    expect(solution["-"].precedence).toBe(0)
+    expect(solution["+"].precedence).toBe(1)
+    expect(solution["/"].precedence).toBe(3)
+    expect(solution["*"].precedence).toBe(2)
+    expect(solution["^"].precedence).toBe(4)
   });
-});    
+        
+it("Does it contain??", function() {
+            
+           // var product = calculator.postfixStack.toString()
+           //  var product = console.log(sol.isNumeric.toString());
+          // console.log(product+ "PRODUCT")
+        var product = sol.operators1.toString();
+        
+        console.log(product);
+        
+        expect(product).toContain(["^"]);
+       
+        expect(product).toContain(["precedence: 4"]);
 
+        expect(product).toContain(["{"]);
+
+           
+         }); 
+
+});
+
+        

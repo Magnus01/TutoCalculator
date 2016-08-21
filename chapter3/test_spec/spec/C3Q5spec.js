@@ -1,5 +1,12 @@
 var calculator = require("../src/C3Q5.js");
 
+var sol = require("../src/C3Q5.js");
+
+console.log("body", sol.pushToArray)
+
+console.log("SOL OPERATORS STRING", sol.pushToArray);
+
+
 describe("MathUtils", function() {
     
  
@@ -32,10 +39,26 @@ describe("MathUtils", function() {
     });
       it("Does it remove operators?", function() {
           
-            expect(calc.pushToArray(["4", "5", "2"])).toEqual([4, 5]);
+            expect(calc.pushToArray(["4", "5", "2"])).toEqual(["4", "5"]);
              
            
     });  
+
+           it("Does the pushToArray Contain the correct essential code?", function() {
+            
+           var PushToArrayStr = sol.pushToArray.toString();
+           
+            var product = console.log(sol.PushToArrayStr+ "What does this print out")
+            
+             expect(PushToArrayStr).toContain("for"); 
+           expect(PushToArrayStr).toContain("var i = 0; i < array.length; i++)"); 
+        
+    expect(PushToArrayStr).toContain("var token = array[i];"); 
+     expect(PushToArrayStr).toContain("postfixStack.push(token)");
+               expect(PushToArrayStr).toContain("return postfixStack;"); 
+               
+       
+         }); 
 
 });
 });

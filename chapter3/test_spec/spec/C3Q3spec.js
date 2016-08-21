@@ -52,11 +52,7 @@ it("Does the MathSolver Contain the correct essential code?", function() {
            var MathSolverStr = sol.MathSolver.toString();
            var postfixStackStr = sol.postfixStack1.toString();
            //  var product = console.log(sol.MathSolver+ "What does this print out")
-             console.log(MathSolverStr+ "_Math Solver String");
-           console.log(postfixStackStr+ "_postfixStack String");
-    
-           expect(postfixStackStr).toContain("var postfixStack = []"); //CAN WE HAVE AN OR HERE TO GET MULTIPLE SYNTAX POSSIBILITIES
-        
+            
            expect(MathSolverStr).toContain("for (var i = 0; i < infix.length; i++)"); 
         
     expect(MathSolverStr).toContain("var token = infix[i];"); 

@@ -1,42 +1,48 @@
 operators1 = function() {
 
     var operators = {
-            
+            "^": {
+                precedence: 4,
+                associativity: "Left"
+            },
             "/": {
                 precedence: 3,
                 associativity: "Left"
             },
             "*": {
-                precedence: 3,
+                precedence: 2,
                 associativity: "Left"
             },
             "+": {
-                precedence: 2,
+                precedence: 1,
                 associativity: "Left"
             },
             "-": {
-                precedence: 2,
+                precedence: 0,
                 associativity: "Left"
             }
         };
 };
 
     var operators = {
-             
+            "^": {
+                precedence: 4,
+                associativity: "Left"
+            },
             "/": {
                 precedence: 3,
                 associativity: "Left"
             },
             "*": {
-                precedence: 3,
+                precedence: 2,
                 associativity: "Left"
             },
             "+": {
-                precedence: 2,
+                precedence: 1,
                 associativity: "Left"
             },
             "-": {
-                precedence: 2,
+                precedence: 0,
                 associativity: "Left"
             }
         };

@@ -4,9 +4,10 @@ MathUtils = function() {};
 var postfixStack = [];
 
 
-function isNumeric(x) {
+
+isNumeric = function(x){
     return !isNaN(parseFloat(x)) && isFinite(x);
-}
+};
 
 MathUtils.prototype.MathSolver = function (infix) {
     postfixStack = [];

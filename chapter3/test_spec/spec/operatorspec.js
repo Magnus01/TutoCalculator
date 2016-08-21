@@ -23,10 +23,10 @@ describe("operators", function() {
     var product = solution["^"].precedence;
     
     expect(product).toBe(4);
-    expect(solution["-"].precedence).toBe(2)
-    expect(solution["+"].precedence).toBe(2)
+    expect(solution["-"].precedence).toBe(0)
+    expect(solution["+"].precedence).toBe(1)
     expect(solution["/"].precedence).toBe(3)
-    expect(solution["*"].precedence).toBe(3)
+    expect(solution["*"].precedence).toBe(2)
     expect(solution["^"].precedence).toBe(4)
   });
         
