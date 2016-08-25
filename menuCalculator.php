@@ -1,0 +1,253 @@
+
+<!--   menu for the question, welcome the user-->
+
+
+<?php    session_start(); 
+
+
+
+?>
+
+
+
+<!DOCTYPE html>
+
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		
+		<title>TutoCalculator</title>
+
+
+
+
+
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		
+	</head>
+	<body >
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html"><img src="images/LogoUIA.png"/></a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="menuCalculator.php">Tutorial</a></li>
+						<li><a href="inscriptionCal.php">Subscription</a></li>
+						<li><a href="#">Project team</a></li>
+					</ul> 
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+				
+					<header class="major">
+						
+						<h2 id="titre"></h2>
+						<p>In this page, you can find a tutorial on how to implement a calculator. </p>
+					</header>
+
+					        
+					
+							
+					<!-- Form -->
+			
+							<!-- Table -->
+						<section>
+						<h2>First Chapter</h2>
+						<p>Choose your questions in the buttons below, write your answer on the inputs. A message will be displayed to tell you if it's correct or not.</p>
+			
+	<div class="container" >
+								
+        <div class="row">                      
+							
+								<div class="6u 12u$(small)">
+									<ul class="actions fit">
+										<li><a href="#" class="button alt fit">Question 1</a></li>
+										<li><a href="#" class="button fit">Question 2</a></li>
+										
+									</ul>
+								</div><div class="6u 12u$(small)">
+									<ul class="actions fit">
+										<li><a href="#" class="button alt fit">Question 3</a></li>
+										<li><a href="#" class="button fit">Question 4</a></li>
+										
+									</ul>
+								</div>
+								</div>
+							
+						</div>
+						
+						
+						<h2>Second Chapter</h2>
+						<p>Choose your questions in the buttons below, write your answer on the inputs. A message will be displayed to tell you if it's correct or not.</p>
+			
+	<div class="container" >
+								
+        <div class="row">                      
+							
+								<div class="6u 12u$(small)">
+									<ul class="actions fit">
+										<li><a href="C2Q1tarek2IFRAMECSS.php" class="button alt fit">C2Q1TEEEST (safe)</a></li>
+										<li><a href="C2Q1tarek2IFRAMECSSsave.php" class="button fit">C2Q1TEEST2 not ready</a></li>
+										
+									</ul>
+								</div><div class="6u 12u$(small)">
+									<ul class="actions fit">
+										<li><a href="C2Q3.php" class="button alt fit">Question 3</a></li>
+										<li><a href="C2Q4.php" class="button fit">Question 4</a></li>
+										
+									</ul>
+								</div>
+								</div>
+							
+						</div>
+						
+						
+						
+						<h2>Third Chapter</h2>
+						<p>Choose your questions in the buttons below, write your answer on the inputs. A message will be displayed to tell you if it's correct or not.</p>
+			
+	<div class="container" >
+								
+        <div class="row">                      
+							
+								<div class="6u 12u$(small)">
+									<ul class="actions fit">
+										<li><a href="C3Q1.php" class="button alt fit">Question 1</a></li>
+										<li><a href="C3Q2.php" class="button fit">Question 2</a></li>
+										
+									</ul>
+								</div><div class="6u 12u$(small)">
+									<ul class="actions fit">
+										<li><a href="C3Q3.php" class="button alt fit">Question 3</a></li>
+										<li><a href="C3Q4.php" class="button fit">Question 4</a></li>
+										
+									</ul>
+								</div>
+								</div>
+							
+						</div>
+						
+						
+						
+						
+						</div>
+						
+						</section>
+
+					
+					
+					
+					
+					
+					
+				
+			
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="4u 6u(medium) 12u$(small)">
+							<h3>Practical informations</h3>
+							<p>Do you need an information?</p>
+							<ul class="alt">
+								<li><a href="#">How the website works?</a></li>
+								<li><a href="#">Frequently Asked Questions</a></li>
+								
+								<li><a href="#">About the team project</a></li>
+							</ul>
+						</section>
+						
+						<!--<section class="4u 6u$(medium) 12u$(small)">
+							<h3>Nostrum, repellat!</h3>
+							<p>Tenetur voluptate exercitationem eius tempora! Obcaecati suscipit, soluta earum blanditiis.</p>
+							<ul class="alt">
+								<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+								<li><a href="#">Id inventore, qui necessitatibus sunt.</a></li>
+								<li><a href="#">Deleniti eum odit nostrum eveniet.</a></li>
+								<li><a href="#">Illum consectetur quibusdam eos corporis.</a></li>
+							</ul>
+						</section>-->
+						
+						<section class="4u$ 12u$(medium) 12u$(small)">
+							<h3>Contact us</h3>
+							<ul class="icons">
+								<li><a href="#" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon rounded fa-pinterest"><span class="label">Pinterest</span></a></li>
+								<li><a href="#" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="#" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="tabular">
+								<li>
+									<h3>Address</h3>
+									Gimlemoen 25, 4630 Kristiansand S, Norvège<br>
+									
+								</li>
+								<li>
+									<h3>Mail</h3>
+									<a href="#">magnusl15@uia.no</a>
+								</li>
+								<li>
+									
+								</li>
+							</ul>
+						</section>
+					</div>
+					<ul class="copyright">
+						<li>&copy; UiA. All rights reserved.</li>
+						<li>Design: <a href="">Calculator Tutorial</a></li>
+						<li>Images: <a href="">Calculator Tutorial</a></li>
+					</ul>
+				</div>
+			</footer>
+
+			<?php     echo $_SESSION['name'];echo '<script> var test1 = document.getElementById(\'titre\');  
+			
+			
+			
+			
+                          
+			test1.innerHTML = \'Welcome  ' . $_SESSION['name'] . ' ' . $_SESSION['surname'] . '.\'; </script>';  
+       
+	   
+	  // session_destroy();
+			
+			?>
+					
+				</div>
+			</section>   
+			
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
