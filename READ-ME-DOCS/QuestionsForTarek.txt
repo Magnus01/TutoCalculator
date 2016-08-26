@@ -1,0 +1,5 @@
+Hi Tarek, I have some questions.
+
+1) Why do you have duplicates of some pages (both .html, and .php); why is that?
+2) On the index.html page, you use the noscript tag; is there a reason for why this should be used?
+        - it seem to create a loading bug where the html is loaded before the css; which leads to loading lag

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="CineFinder"> 
+	<head>
+		<meta charset="UTF-8">
+		<title>Page d'inscription</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]>
+		<script src="../css/ie/html5shiv.js"></script><![endif]-->
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/skel.min.js"></script>
+		<script src="../js/skel-layers.min.js"></script>
+		<script src="../js/init.js"></script>
+		
+		
+		
+		<!-- Chargement d'Angular JS et du fichier JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="testPost.js">
+	</script>
+		
+		
+		
+		<noscript>
+			<link rel="stylesheet" href="../css/skel.css" />
+			<link rel="stylesheet" href="../css/style.css" />
+			<link rel="stylesheet" href="../css/style-xlarge.css" />
+		</noscript>
+		
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="../css/ie/v8.css"/><![endif]-->
+	</head>
+	<body   ng-controller="ListingCTRL">
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="../index.html"><img src="../images/LogoUIA.png"</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../Tutorial/Calculator.html">Tutorial</a></li>
+						<li><a href="sign-up.html">Subscription</a></li>
+						<li><a href="#">Project team</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major">
+						<h2>Subscription page</h2>
+						<p>Subscribe with only one click! It'll help us to make some statistics about the project so we can adapt its content and improve the teaching methods and the correction system.</p>
+					</header>
+
+					
+					
+					
+					<!-- Form -->
+						<section>
+							<h3>Subscribe to TutoCalculator</h3>
+							<form method="post" action="#">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="name" id="name" value="" placeholder="Name" />
+									</div>
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="name" id="name" value="" placeholder="Surname" />
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+										<input type="email" name="email" id="email" value="" placeholder="Email" />
+									</div>
+									<div class="12u$">
+										<div class="select-wrapper">
+											<select name="category" id="category">
+												<option value="">- Level in Javascript -</option>
+												<option value="1">Beginner</option>
+												<option value="1">Regular</option>
+												<option value="1">Advanced</option>
+												
+											</select>
+										</div>
+									</div>
+									<!--<div class="4u 12u$(small)">
+										<input type="radio" id="priority-low" name="priority" checked>
+										<label for="priority-low">Low Priority</label>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="priority-normal" name="priority">
+										<label for="priority-normal">Normal Priority</label>
+									</div>
+									<div class="4u$ 12u$(small)">
+										<input type="radio" id="priority-high" name="priority">
+										<label for="priority-high">High Priority</label>
+									</div>
+									<div class="6u 12u$(small)">
+										<input type="checkbox" id="copy" name="copy">
+										<label for="copy">Email me a copy of this message</label>
+									</div>-->
+									<div class="6u$ 12u$(small)">
+										<input type="checkbox" id="human" name="human" >
+										<label for="human">I have read and agree to the terms of use.</label>
+									</div>
+									<!--
+									<div class="12u$">
+										<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+									</div>-->
+									<div class="12u$">
+										<ul class="actions">
+											<!--<li><input type="submit" value="Valider" class="special" /></li>-->
+											<li><a href="compte.html" class="button">Confirm</a></li>
+											<!--<li><a href="connexion.html" class="button">Déja inscris?</a></li>-->
+											<!--<li><input type="reset" value="Déja inscris?" /></li>-->
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+					
+					
+					
+					
+					
+					
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="4u 6u(medium) 12u$(small)">
+							<h3>Infos Pratiques</h3>
+							<p>Vous avez besoin d'une information?</p>
+							<ul class="alt">
+								<li><a href="#">Comment ça marche</a></li>
+								<li><a href="#">Questions fréquentes</a></li>
+								<li><a href="#">Application mobile</a></li>
+								<li><a href="#">Conseil prévention</a></li>
+							</ul>
+						</section>
+						<!--
+						<section class="4u 6u$(medium) 12u$(small)">
+							<h3>Nostrum, repellat!</h3>
+							<p>Tenetur voluptate exercitationem eius tempora! Obcaecati suscipit, soluta earum blanditiis.</p>
+							<ul class="alt">
+								<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+								<li><a href="#">Id inventore, qui necessitatibus sunt.</a></li>
+								<li><a href="#">Deleniti eum odit nostrum eveniet.</a></li>
+								<li><a href="#">Illum consectetur quibusdam eos corporis.</a></li>
+							</ul>
+						</section>
+						-->
+						<section class="4u$ 12u$(medium) 12u$(small)">
+							<h3>Contactez-nous</h3>
+							<ul class="icons">
+								<li><a href="#" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon rounded fa-pinterest"><span class="label">Pinterest</span></a></li>
+								<li><a href="#" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="#" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="tabular">
+								<li>
+									<h3>Address</h3>
+									3 bis rue Lakanal<br>
+									92330 SCEAUX
+								</li>
+								<li>
+									<h3>Mail</h3>
+									<a href="#">adrien.pare@epfedu.fr</a>
+								</li>
+								<li>
+									
+								</li>
+							</ul>
+						</section>
+					</div>
+					<ul class="copyright">
+						<li>&copy; CodD. All rights reserved.</li>
+						<li>Design: <a href="">Covoiturage 2</a></li>
+						<li>Images: <a href="">Covoiturage 2</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
